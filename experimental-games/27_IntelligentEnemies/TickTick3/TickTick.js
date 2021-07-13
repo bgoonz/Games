@@ -11,12 +11,12 @@ powerupjs.Game.loadAssets = function () {
     );
   };
 
-  var loadSound = function (sound, looping) {
-    return new powerupjs.Sound(
-      "../../assets/TickTick/sounds/" + sound,
-      looping
-    );
-  };
+  // var loadSound = function (sound, looping) {
+  //   return new powerupjs.Sound(
+  //     "../../assets/TickTick/sounds/" + sound,
+  //     looping
+  //   );
+  // };
 
   sprites.background_title = loadSprite("backgrounds/spr_title.jpg");
   sprites.background_help = loadSprite("backgrounds/spr_help.jpg");
