@@ -86,3 +86,84 @@ $(document).ready(function () {
     });
   };
 })(jQuery);
+
+
+$(document).ready(function () {
+
+  $('.iframe').responsiveIframes({ openMessage: "Open iframe", closeMessage: "Close iframe" });
+
+});
+
+const converted = {
+  ".iframe": {
+    marginBottom: "45px",
+    border: "3px solid #131C28",
+    overflow: "hidden",
+    background: "#fff"
+  },
+  ".iframe iframe": {
+    width: "100%",
+    height: "400px",
+    border: "0",
+    display: "block"
+  },
+  ".iframe-header": { display: "none" },
+  ".js .iframe-header": { display: "block" },
+  ".iframe-content": {
+    height: "400px",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch"
+  },
+  ".iframe-header a": {
+    fontSize: "15px",
+    color: "white",
+    background: "#3B4658",
+    display: "block",
+    padding: "15px",
+    textAlign: "center",
+    borderBottom: "3px solid #131C28"
+  },
+  ".iframe-header a:hover,\n.iframe-header a:focus": { background: "#6A798E" },
+  ".iframe-full-screen .iframe-header": {
+    display: "block",
+    position: "absolute",
+    height: "50px",
+    width: "100%"
+  },
+  ".iframe-full-screen .iframe-content": {
+    position: "absolute",
+    top: "50px",
+    bottom: "0",
+    width: "100%",
+    height: "auto"
+  },
+  ".iframe-full-screen .iframe-header a": {
+    padding: "0",
+    height: "44px",
+    lineHeight: "44px",
+    textAlign: "center",
+    border: "3px solid #131C28"
+  },
+  ".iframe-full-screen body": {
+    width: "100%",
+    height: "100%",
+    overflow: "hidden"
+  },
+  ".iframe-full-screen .iframe.iframe-active": {
+    width: "100%",
+    height: "100%",
+    position: "fixed",
+    left: "0",
+    top: "0",
+    bottom: "0",
+    right: "0",
+    zIndex: 9999,
+    border: "none"
+  },
+  ".iframe-full-screen .iframe iframe": {
+    position: "absolute",
+    height: "100%",
+    width: "100%",
+    border: "none"
+  }
+}
