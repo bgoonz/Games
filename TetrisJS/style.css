@@ -7,7 +7,7 @@ body {
   padding: 1em;
   border: 4px solid black;
   border-radius: 10px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 #stats {
@@ -42,7 +42,7 @@ body {
 #upcoming {
   display: block;
   margin: 0 auto;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
 }
 
 #score {
@@ -67,7 +67,7 @@ body {
   #tetris {
     font-size: 0.75em;
     width: 250px;
-    background-image:url(https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680)
+    background-image: url(https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680);
   }
 
   #menu {
@@ -89,15 +89,21 @@ body {
 /* 10px chunks */
 @media screen and (min-width: 400px) and (min-height: 400px) {
   #tetris {
-    font-size: 1.00em;
+    font-size: 1em;
     width: 350px;
   }
 
   #menu {
-  background: linear-gradient(-45deg, #7cda00, #dd00ffe5, #1ef8bad8, #5353e7e5);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
+    background: linear-gradient(
+      -45deg,
+      #7cda00,
+      #dd00ffe5,
+      #1ef8bad8,
+      #5353e7e5
+    );
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
   }
 
   #upcoming {
@@ -138,7 +144,7 @@ body {
 @media screen and (min-width: 600px) and (min-height: 600px) {
   #tetris {
     text-align: center;
-    font-size: 1.50em;
+    font-size: 1.5em;
     width: 750px;
   }
 
@@ -180,13 +186,12 @@ body {
     height: 600px;
   }
 }
-#menu{
-  
+#menu {
 }
 /* 30px chunks */
 @media screen and (min-width: 800px) and (min-height: 800px) {
   #tetris {
-    font-size: 2.00em;
+    font-size: 2em;
     width: 750px;
   }
 
